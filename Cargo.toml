@@ -3,9 +3,6 @@ name = "quark"
 version = "0.1.0"
 edition = "2021"
 
-[workspace]
-members = ["api_layer_test", "proc-macros"]
-
 [dependencies]
 # Monoxide crates
 proc-macros = { path = "proc-macros" }
@@ -13,5 +10,8 @@ proc-macros = { path = "proc-macros" }
 # External dependencies
 dashmap = "6.1.0"
 rustc-hash = "2.0.0"
-openxr = { git = "https://github.com/technobaboo/openxrs.git", branch = "quark-hax", default-features = false }
+openxr = { git = "https://github.com/yshui-forks/openxrs", branch = "dev" }
 ustr = "1.0.0"
+phf = { version = "0.11.3", features = ["macros"] }
+thiserror = "2.0.12"
+log = "0.4.27"
