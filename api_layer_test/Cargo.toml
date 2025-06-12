@@ -14,3 +14,4 @@ quark = { path = "../" }
 dashmap = "6.1.0"
 rustc-hash = "2.0.0"
 ustr = "1.0.0"
+phf = { version = "0.11.3", features = ["macros"] }
